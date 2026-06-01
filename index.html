@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Manifestacija Plodovi Rađevine u Krupnju promoviše domaće proizvode, voće, med, rakiju i tradicionalnu hranu ovog kraja.">
+
+    <meta name="keywords"
+        content="Plodovi Radjevine, domaci proizvodi, Krupanj, manifestacija, voce, med, rakija">
+
+    <meta name="author" content="Tamara">
+
+    <meta property="og:title" content="Plodovi Rađevine - Početna">
+    <meta property="og:description"
+        content="Manifestacija Plodovi Rađevine promoviše domaće proizvode, voće, med i rakiju.">
+    <meta property="og:image" content="logovoce.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="logovoce.png">
+
+    <title>Plodovi Rađevine - Početna</title>
+
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-naslov">
+        <img src="logovoce.png" alt="Logo manifestacije">
+        <h1>Plodovi Rađevine</h1>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="meni">
+
+        <a href="index.html">Početna</a>
+
+        <a href="onama.html">O nama</a>
+
+        <div class="dropdown">
+
+            <button class="dropbtn">Proizvodi</button>
+
+            <div class="dropdown-content">
+                <a href="proizvodi.html">Svi proizvodi</a>
+                <a href="#">Voće</a>
+                <a href="#">Med</a>
+                <a href="#">Rakija</a>
+                <a href="#">Zimnica</a>
+                <a href="#">Gljive</a>
+            </div>
+
+        </div>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <button onclick="promeniTemu()">Tema</button>
+        <button onclick="veciFont()">A+</button>
+        <button onclick="manjiFont()">A-</button>
+
+    </nav>
+
+</header>
+
+<div class="slider">
+    <img id="slider"
+         src="slika1.jpg"
+         alt="Manifestacija Plodovi Rađevine">
+</div>
+
+<section class="uvod-sekcija">
+
+    <div class="uvod-kontejner">
+
+        <h2 class="uvod-naslov">
+            Dobrodošli na manifestaciju Plodovi Rađevine
+        </h2>
+
+        <p class="uvod-tekst">
+
+            Agrarno-turistička manifestacija
+            <strong>"Plodovi Rađevine"</strong>
+            predstavlja krunu manifestacionog turizma opštine Krupanj.
+
+            Ovaj tradicionalni događaj okuplja preko 200 izlagača iz cele Srbije
+            i regiona, slaveći bogatstvo, tradiciju i autentične ukuse
+            zapadne Srbije.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section class="multimedija-sekcija">
+    <div class="multimedija-kontejner">
+        <h2 class="multimedija-naslov">Video</h2>
+        <div class="video-kontejner">
+            <video controls poster="slika1.jpg" style="width: 100%; height: auto; display: block;">
+                <source src="video.mp4" type="video/mp4">
+                Vaš browser ne podržava reprodukciju video materijala.
+            </video>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Plodovi Rađevine</p>
+    <p>
+        Email: info@plodoviradjevine.rs
+    </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="skripta.js"></script>
+
+</body>
+</html>

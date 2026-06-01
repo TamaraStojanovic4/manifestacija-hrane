@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pregledajte bogatu ponudu domaćih proizvoda iz Rađevine: sveže voće, tradicionalna rakija, prirodni med i domaća zimnica.">
+    <meta name="keywords" content="proizvodi, jabuke, maline, kupine, grozđe, šljive, rakija, med, zimnica, gljive, Krupanj">
+    <meta name="author" content="Tamara">
+    
+    <meta property="og:title" content="Proizvodi - Plodovi Rađevine" />
+    <meta property="og:description" content="Domaći proizvodi sa manifestacije Plodovi Rađevine: voće, med, rakija i zimnica." />
+    <meta property="og:image" content="logovoce.png" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="logovoce.png">
+
+    <title>Proizvodi</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-naslov">
+        <img src="logovoce.png" alt="Logo manifestacije Plodovi Rađevine">
+        <h1>Plodovi Rađevine</h1>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="meni">
+        <a href="index.html">Početna</a>
+        <a href="onama.html">O nama</a>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Proizvodi</button>
+            <div class="dropdown-content">
+                <a href="#svi">Svi proizvodi</a>
+                <a href="#voce">Voće</a>
+                <a href="#med">Med</a>
+                <a href="#rakija">Rakija</a>
+                <a href="#zimnica">Zimnica</a>
+                <a href="#gljive">Gljive</a>
+            </div>
+        </div>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <button onclick="promeniTemu()">Tema</button>
+        <button onclick="veciFont()">A+</button>
+        <button onclick="manjiFont()">A-</button>
+    </nav>
+</header>
+
+<section class="text-center py-5" style="background:#fdf6ed;">
+    <div class="container">
+        <h2 class="display-4 fw-bold text-danger mb-3">Naši Domaći Proizvodi</h2>
+        <p class="fs-5 text-muted mx-auto text-center" style=" text-align: center !important;">
+            Svi naši proizvodi uzgajani su na tradicionalan način na ekološki čistim imanjima širom prelepe Rađevine. Okusite tradiciju i kvalitet!
+        </p>
+    </div>
+</section>
+
+<!-- VOĆE -->
+<section id="voce" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Voće</h2>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="jabuke.jpg" class="card-img-top" alt="Jabuke">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Sveže</span>
+                    </div>
+                    
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jabuke</h5>
+                        <p class="card-text">
+                            Sočne, domaće jabuke iz rađevačkih voćnjaka.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="maline.jpg" class="card-img-top" alt="Maline">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Premium</span>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Maline</h5>
+                        <p class="card-text">
+                            Crveno zlato Rađevine.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="kupine.jpg" class="card-img-top" alt="Kupine">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">100% Prirodne</span>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kupine</h5>
+                        <p class="card-text">
+                            Bogate vitaminima i antioksidansima.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- RAKIJA -->
+<section id="rakija" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Rakija</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="rakija.jpg" class="card-img-top" alt="Rakija">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Domaća</span>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rakija</h5>
+                        <p class="card-text">
+                            Tradicionalna stara šljivovica.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MED -->
+<section id="med" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Med</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="med.jpg" class="card-img-top" alt="Med">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Čist</span>
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Med</h5>
+                        <p class="card-text">
+                            Livadski, bagremov i šumski med.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ZIMNICA -->
+<section id="zimnica" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Zimnica</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="zimnica.jpg" class="card-img-top" alt="Zimnica">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Domaća</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Zimnica</h5>
+                        <p class="card-text">
+                            Ajvar, pinđur i domaći specijaliteti.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GLJIVE -->
+<section id="gljive" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Gljive</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <img src="gljive.jpg" class="card-img-top" alt="Gljive">
+                    <div class="text-center mb-2">
+                        <span class="badge bg-success fs-6">Šumske</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gljive</h5>
+                        <p class="card-text">
+                            Vrganji, lisičarke i druge šumske gljive.
+                        </p>
+                        <a href="onama.html" class="btn btn-danger">
+                            Saznaj više o manifestaciji
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Plodovi Rađevine - Domaći proizvodi</p>
+    <p>
+        Email: info@plodoviradjevine.rs
+    </p>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="skripta.js"></script>
+
+</body>
+</html>

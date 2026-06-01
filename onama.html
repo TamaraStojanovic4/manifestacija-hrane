@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Istorijat, vizija i tradicija agrarno-turističke manifestacije Plodovi Rađevine u Krupnju.">
+
+    <meta name="keywords"
+        content="O nama, istorija, tradicija, Krupanj, Radjevina, manifestacija, izlagači">
+
+    <meta name="author" content="Tamara">
+
+    <meta property="og:title" content="O nama - Plodovi Rađevine">
+    <meta property="og:description"
+        content="Saznajte više o istoriji i tradiciji manifestacije Plodovi Rađevine.">
+    <meta property="og:image" content="logovoce.png">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="logovoce.png">
+
+    <title>O nama - Plodovi Rađevine</title>
+
+    <link rel="stylesheet" href="stil.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-naslov">
+        <img src="logovoce.png" alt="Logo manifestacije Plodovi Rađevine">
+        <h1>Plodovi Rađevine</h1>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <nav id="meni">
+
+        <a href="index.html">Početna</a>
+
+        <a href="onama.html">O nama</a>
+
+        <div class="dropdown">
+
+            <button class="dropbtn">Proizvodi</button>
+
+            <div class="dropdown-content">
+                <a href="proizvodi.html">Svi proizvodi</a>
+                <a href="#">Voće</a>
+                <a href="#">Med</a>
+                <a href="#">Rakija</a>
+                <a href="#">Zimnica</a>
+                <a href="#">Gljive</a>
+            </div>
+
+        </div>
+
+        <a href="kontakt.html">Kontakt</a>
+
+        <button onclick="promeniTemu()">Tema</button>
+        <button onclick="veciFont()">A+</button>
+        <button onclick="manjiFont()">A-</button>
+
+    </nav>
+
+</header>
+
+<section class="o-nama-sekcija">
+
+    <div class="o-nama-kontejner">
+
+        <h2 class="o-nama-glavni-naslov">
+            Istorija i vizija manifestacije
+        </h2>
+
+        <div class="o-nama-sadrzaj">
+
+            <div class="o-nama-tekst-blok">
+
+                <p>
+                    Manifestacija <strong>"Plodovi Rađevine"</strong>
+                    prvi put je uspešno organizovana 2013. godine u Krupnju.
+                    Njen primarni cilj od samog početka jeste očuvanje bogate
+                    tradicije, promocija malih poljoprivrednih gazdinstava,
+                    kao i snažan podsticaj razvoju manifestacionog i seoskog
+                    turizma u ovom prelepom delu zapadne Srbije.
+                </p>
+
+                <p>
+                    Kako stara i mudra krilatica ovog naroda kaže:
+                    <strong>
+                        "Rađevina je da rađa, a Krupanj da bude krupno!"
+                    </strong>
+
+                    Upravo se to svake jeseni iznova dokazuje na platou ispred
+                    Biblioteke „Politika“, gde lokalni domaćini ponosno izlažu
+                    plodove svog celogodišnjeg truda i rada na zemlji koja je
+                    ekološki čista, zdrava i plodna.
+                </p>
+
+                <p>
+                    Organizovana od strane Turističko-sportske organizacije
+                    opštine Krupanj i pod pokroviteljstvom lokalne samouprave,
+                    ova izložba je odavno prerasla lokalne okvire.
+
+                    Danas ona predstavlja višednevni spektakl tradicije,
+                    privrede, kulture i narodnog stvaralaštva koji privlači
+                    na hiljade posetilaca spremnih da osete autentičan duh
+                    i čuveno gostoprimstvo Rađevaca.
+                </p>
+
+            </div>
+
+            <div class="o-nama-slika-blok">
+
+                <img
+                    src="slika2.jpg"
+                    alt="Posetioci i izlagači na manifestaciji Plodovi Rađevine">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="multimedija-sekcija">
+
+    <h2>Pogledajte atmosferu sa manifestacije</h2>
+
+    <div class="video-kontejner">
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/11zngJFHnzE?si=0VsSPVvAy_7N8il_"
+            title="Video sa manifestacije Plodovi Rađevine"
+            style="border:0;"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+<section class="program-sekcija">
+
+    <h2>Preuzmite program manifestacije</h2>
+
+    <p>
+        Detaljnu satnicu, spisak izlagača i raspored takmičenja
+        možete pogledati u zvaničnom dokumentu:
+    </p>
+
+    <a
+        href="program.pdf"
+        target="_blank"
+        class="pdf-dugme">
+
+        Preuzmi PDF program rada
+
+    </a>
+
+</section>
+
+<footer>
+    <p>© 2026 Plodovi Rađevine - O nama</p>
+    <p>
+        Email: info@plodoviradjevine.rs
+    </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="skripta.js"></script>
+
+</body>
+</html>
