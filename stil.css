@@ -1,0 +1,513 @@
+/* ==========================================
+   1. RESET & OSNOVNI STILOVI (Sve stranice)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5e6;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+/* ==========================================
+   2. DARK MODE STILOVI (Pristupačnost)
+   ========================================== */
+body.dark header {
+    background: #111;
+}
+
+body.dark footer {
+    background: #111;
+}
+
+body.dark section,
+body.dark .uvod-sekcija,
+body.dark .o-nama-sekcija,
+body.dark .multimedija-sekcija,
+body.dark .program-sekcija {
+    background: #333 !important;
+    color: white !important;
+}
+
+body.dark .uvod-naslov,
+body.dark .o-nama-glavni-naslov,
+body.dark .o-nama-tekst-blok p,
+body.dark .uvod-tekst {
+    color: white !important;
+}
+
+body.dark .kartica,
+body.dark .card {
+    background: #444 !important;
+    color: white !important;
+}
+
+body.dark .card-title,
+body.dark .card-text {
+    color: white !important;
+}
+
+body.dark .dropdown-content {
+    background: #444;
+}
+
+body.dark .dropdown-content a {
+    color: white;
+    border-bottom: 1px dashed #555;
+}
+
+/* ==========================================
+   3. ZAGLAVLJE & NAVIGACIJA (Header)
+   ========================================== */
+header {
+    background: #8b0000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo-naslov {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-naslov img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header h1 {
+    font-size: clamp(22px, 3vw, 36px);
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.4);
+    transition: 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav a,
+nav .dropbtn,
+nav button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav .dropbtn:hover,
+nav button:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   4. DROPDOWN & MEGA MENI
+   ========================================== */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .dropdown-content {
+        min-width: 300px;
+        display: none;
+        position: absolute;
+        background: white;
+        padding: 15px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: grid;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 5px 10px;
+        border-bottom: 1px dashed #eee;
+    }
+}
+
+/* ==========================================
+   5. SLAJDER (index.html)
+   ========================================== */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================
+   6. UVODNI DEO NA POČETNOJ (index.html)
+   ========================================== */
+.uvod-sekcija {
+    background: #fdf6ed;
+    padding: 60px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.uvod-kontejner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.uvod-naslov {
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.uvod-tekst {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ==========================================
+   7. STRANICA O NAMA (onama.html)
+   ========================================== */
+.o-nama-sekcija {
+    background: #fff5e6;
+    padding: 60px 20px;
+    transition: 0.3s;
+}
+
+.o-nama-kontejner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.o-nama-glavni-naslov {
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.o-nama-sadrzaj {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.o-nama-tekst-blok {
+    flex: 1;
+    text-align: left;
+}
+
+.o-nama-tekst-blok p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.o-nama-slika-blok {
+    flex: 1;
+    text-align: center;
+}
+
+.o-nama-slika-blok img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+/* ==========================================
+   DODATAK ZA LOKALNI VIDEO I MULTIMEDIJU
+   ========================================== */
+.multimedija-sekcija {
+    background: #fdf6ed;
+    padding: 60px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.multimedija-kontejner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.multimedija-naslov {
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.video-kontejner {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: #000;
+}
+
+body.dark .multimedija-sekcija {
+    background: #333 !important;
+    color: white !important;
+}
+
+body.dark .multimedija-naslov {
+    color: white !important;
+}
+
+.video-kontejner iframe, .video-kontejner video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pdf-dugme {
+    display: inline-block;
+    background: #8b0000;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.pdf-dugme:hover {
+    background: #a50000;
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   8. BOOTSTRAP KARTICE (proizvodi.html)
+   ========================================== */
+.card {
+    position: relative !important;
+    border: none !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important;
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px !important;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #8b0000;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    padding: 10px;
+    color: #555;
+}
+
+.card .btn {
+    border-radius: 20px !important;
+    padding: 8px 20px;
+}
+
+/* ==========================================
+   9. FORMA, ELEMENTI & PRISTUPAČNOST
+   ========================================== */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form button {
+    background: #8b0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #a50000;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #8b0000;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
+}
+
+/* ==========================================
+   10. RESPONZIVNOST (Mobilni uređaji)
+   ========================================== */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        padding-top: 15px;
+        gap: 15px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        background: rgba(0,0,0,0.05);
+        box-shadow: none;
+    }
+
+    .slider {
+        height: 250px;
+    }
+
+    .uvod-naslov, .o-nama-glavni-naslov, .multimedija-naslov {
+        font-size: 1.6rem;
+    }
+
+    .uvod-tekst, .o-nama-tekst-blok p {
+        font-size: 1.1rem;
+    }
+
+    .o-nama-sadrzaj {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .o-nama-tekst-blok {
+        text-align: center;
+    }
+
+    .card img {
+        height: 180px;
+    }
+    
+    form {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
