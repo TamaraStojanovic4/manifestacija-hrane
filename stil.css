@@ -1,3 +1,21 @@
+
+@font-face {
+    font-family: 'LoraLokalni';
+    src: url('Lora/Lora-Regular.ttf') format('truetype'); /* Promenjeno iz fontovi/ u Lora/ */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LoraLokalni';
+    src: url('Lora/Lora-Bold.ttf') format('truetype'); /* Promenjeno iz fontovi/ u Lora/ */
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'LoraLokalni', serif;
+}
 /* ==========================================
    1. RESET & OSNOVNI STILOVI (Sve stranice)
    ========================================== */
@@ -12,7 +30,6 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
     background: #fff5e6;
     line-height: 1.6;
     transition: 0.3s;
